@@ -180,7 +180,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Farouq does.",
+      "I've never met a web developer who truly cares about their clients success like Farouq does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
