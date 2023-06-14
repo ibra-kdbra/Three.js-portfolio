@@ -16,6 +16,8 @@ import {
   figma,
   docker,
   meta,
+  legal,
+  geek,
   starbucks,
   tesla,
   shopify,
@@ -144,7 +146,7 @@ const experiences = [
   {
     title: "Web Developer",
     company_name: "Shopify",
-    icon: shopify,
+    icon: legal,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
@@ -155,11 +157,11 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Web Application Engineer",
+    company_name: "Geeks for Geeks",
+    icon: geek,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jan 2022 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",

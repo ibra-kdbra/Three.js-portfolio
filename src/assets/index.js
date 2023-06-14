@@ -22,6 +22,8 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
 
 import meta from "./company/meta.png";
+import geek from "./company/geeks.png";
+import legal from "./company/legal.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
@@ -53,6 +55,8 @@ export {
   typescript,
   threejs,
   meta,
+  geek,
+  legal,
   shopify,
   starbucks,
   tesla,
