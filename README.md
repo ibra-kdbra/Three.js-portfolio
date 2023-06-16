@@ -1,13 +1,5 @@
-# Portfolio Page
--this page was made with:
--react fiber  
+# Resume
+Sketch with JavaScript,CSS,SCSS template.
 
--three.js
-
--tailwind Css
-
--postcss 
-
--vite.js
-
--react tool kit 
+### Review the CV
+**https://ibra-kdbra.github.io/Three.js-portfolio/**
