@@ -32,7 +32,7 @@ function Navbar() {
         >
           <div className="relative w-[80%] h-[80%] rounded-md">
             <Image
-              src="/assets/avatar.svg"
+              src="/assets/logo.svg"
               alt="avatar"
               fill={true}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
@@ -65,7 +65,7 @@ function Navbar() {
                         rounded-full relative cursor-pointer"
             >
               <Image
-                src="/assets/avatar.png"
+                src="/assets/logo.svg"
                 alt="avatar"
                 fill={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 20vw"
