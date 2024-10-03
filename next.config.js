@@ -2,7 +2,13 @@
 const nextConfig = {
 	reactStrictMode: true,
 	images: {
-		domains: ["res.cloudinary.com"]
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'res.cloudinary.com',
+				pathname: '**', // Match all paths from Cloudinary
+			},
+		],
 	},
 	webpack(config) {
 		// Grab the existing rule that handles SVG imports
@@ -15,7 +21,7 @@ const nextConfig = {
 			{
 				...fileLoaderRule,
 				test: /\.svg$/i,
-				resourceQuery: /url/ // *.svg?url
+				resourceQuery: /url/, // *.svg?url
 			},
 			// Convert all other *.svg imports to React components
 			{
