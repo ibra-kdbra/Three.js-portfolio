@@ -46,7 +46,7 @@
 npm install
 ```
 
-4. To run the development server:
+2. To run the development server:
 
 ```bash
 npm run dev
