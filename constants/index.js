@@ -402,12 +402,8 @@ const projects = [
         name: "react-confetti",
         color: "yellow-text-gradient",
       },
-      {
-        name: "react-confetti",
-        color: "cyan-text-gradient",
-      },
     ],
-    image: "/assets/projects/leetCode.png",
+    image: "/assets/projects/leetcode.png",
     source_code_link:
       "https://github.com/ibra-kdbra/Journey_FullStack/tree/leetCode",
     deployed_link:
@@ -424,7 +420,7 @@ const projects = [
       },
       {
         name: "three.js",
-        color: "black-text-gradient",
+        color: "green-text-gradient",
       },
       {
         name: "css",
@@ -440,6 +436,70 @@ const projects = [
       "https://github.com/ibra-kdbra/Chessboard-three.js",
     deployed_link:
       "https://ibra-kdbra.github.io/Chessboard-three.js/",
+  },
+  {
+    name: "Admin API website",
+    description:
+      "This is an special made Admin API Panel for the user own configuration, as it built to be dynamic to any supervisor built on Django, bootstrap",
+    tags: [
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "css",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "python",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: "/assets/projects/admin_platform.png",
+    source_code_link:
+      "https://github.com/ibra-kdbra/Journey_FullStack/tree/flask_soft_ui_dashboard",
+    deployed_link:
+      "https://django-datta-able-whtm.onrender.com/",
+  },
+  {
+    name: "",
+    description:
+      "Mobile Device show case using 3d webgl technologies with threejs, nextjs with gsap motion over heavy styling using tailwindcss",
+    tags: [
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "next.js",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "gsap",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "three.js",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "/assets/projects/mobile_showcase.png",
+    source_code_link:
+      "https://github.com/ibra-kdbra/Journey_FullStack/tree/iphone-3d_animation",
+    deployed_link:
+      "https://iphone-3d-animate-vnext.vercel.app/",
   },
 ];
 
