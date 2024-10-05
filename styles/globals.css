@@ -176,6 +176,70 @@ svg {
   -webkit-text-fill-color: transparent;
 }
 
+.red-text-gradient {
+  background: #ff0000;
+  background: -webkit-linear-gradient(to top, #ff0000, #ff6347);
+  background: linear-gradient(to top, #ff0000, #ff6347);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cyan-text-gradient {
+  background: #00ffff;
+  background: -webkit-linear-gradient(to top, #00ffff, #00bfff);
+  background: linear-gradient(to top, #00ffff, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navy-text-gradient {
+  background: #000080;
+  background: -webkit-linear-gradient(to top, #000080, #4169e1);
+  background: linear-gradient(to top, #000080, #4169e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.grey-text-gradient {
+  background: #808080;
+  background: -webkit-linear-gradient(to top, #808080, #d3d3d3);
+  background: linear-gradient(to top, #808080, #d3d3d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.maroon-text-gradient {
+  background: #800000;
+  background: -webkit-linear-gradient(to top, #800000, #b22222);
+  background: linear-gradient(to top, #800000, #b22222);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.magenta-text-gradient {
+  background: #ff00ff;
+  background: -webkit-linear-gradient(to top, #ff00ff, #ff77ff);
+  background: linear-gradient(to top, #ff00ff, #ff77ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.violet-text-gradient {
+  background: #8a2be2;
+  background: -webkit-linear-gradient(to top, #8a2be2, #dda0dd);
+  background: linear-gradient(to top, #8a2be2, #dda0dd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple-text-gradient {
+  background: #800080;
+  background: -webkit-linear-gradient(to top, #800080, #da70d6);
+  background: linear-gradient(to top, #800080, #da70d6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .modal {
   transition: all 0.3s ease-in-out;
   animation: fadeIn 0.3s ease-in-out;
