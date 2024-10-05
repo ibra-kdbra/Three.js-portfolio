@@ -320,7 +320,7 @@ const projects = [
     tags: [
       {
         name: "javascript",
-        color: "blue-text-gradient",
+        color: "yellow-text-gradient",
       },
       {
         name: "react.js",
@@ -332,7 +332,7 @@ const projects = [
       },
       {
         name: "express",
-        color: "pink-text-gradient",
+        color: "grey-text-gradient",
       },
       {
         name: "mongodb",
@@ -344,7 +344,7 @@ const projects = [
       },
       {
         name: "mui-materials",
-        color: "yellow-text-gradient",
+        color: "blue-text-gradient",
       },
     ],
     image: "/assets/projects/finance_dashboard.png",
@@ -358,7 +358,7 @@ const projects = [
     tags: [
       {
         name: "react.js",
-        color: "blue-text-gradient",
+        color: "cyan-text-gradient",
       },
       {
         name: "styled-components",
@@ -366,7 +366,7 @@ const projects = [
       },
       {
         name: "mui-materials",
-        color: "pink-text-gradient",
+        color: "blue-text-gradient",
       },
       {
         name: "react-player",
@@ -388,11 +388,11 @@ const projects = [
       },
       {
         name: "next.js",
-        color: "green-text-gradient",
+        color: "grey-text-gradient",
       },
       {
         name: "tailwindcss",
-        color: "pink-text-gradient",
+        color: "cyan-text-gradient",
       },
       {
         name: "firebase",
@@ -400,7 +400,7 @@ const projects = [
       },
       {
         name: "react-confetti",
-        color: "yellow-text-gradient",
+        color: "violet-text-gradient",
       },
     ],
     image: "/assets/projects/leetcode.png",
@@ -456,7 +456,7 @@ const projects = [
       },
       {
         name: "bootstrap",
-        color: "pink-text-gradient",
+        color: "violet-text-gradient",
       },
       {
         name: "python",
@@ -500,6 +500,42 @@ const projects = [
       "https://github.com/ibra-kdbra/Journey_FullStack/tree/iphone-3d_animation",
     deployed_link:
       "https://iphone-3d-animate-vnext.vercel.app/",
+  },
+  {
+    name: "Reservation System",
+    description:
+      "A public system for reservation over multi categories with the easy to add, delete, update, your data, reserve or cancel your own data, very simple ui yet powerful under the hood, build using nextjs, nodejs, prisma ORM, mongoDB, google auth , cloudinary",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "grey-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongoDB",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "cloudinary",
+        color: "violet-text-gradient",
+      }
+    ],
+    image: "/assets/projects/reservation.png",
+    source_code_link:
+      "https://github.com/ibra-kdbra/reservation-system",
+    deployed_link:
+      "https://reservation-bnb.netlify.app/",
   },
 ];
 
