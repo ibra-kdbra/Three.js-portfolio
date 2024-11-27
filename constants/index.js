@@ -535,7 +535,7 @@ const projects = [
     source_code_link:
       "https://github.com/ibra-kdbra/reservation-system",
     deployed_link:
-      "https://reservation-bnb.netlify.app/",
+      "https://public-reservation.netlify.app/",
   },
 ];
 
