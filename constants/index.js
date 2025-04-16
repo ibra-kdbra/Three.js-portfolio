@@ -1,4 +1,5 @@
 import GithubIcon from "./../public/assets/icons/github.svg";
+import GitLabIcon from "./../public/assets/icons/gitlab.svg";
 import LinkedInIcon from "./../public/assets/icons/linkedin.svg";
 import FrontendIcon from "./../public/assets/icons/frontend.svg";
 import LeaderShipIcon from "./../public/assets/icons/leadership.svg";
@@ -6,6 +7,7 @@ import ProblemSolvingIcon from "./../public/assets/icons/problem-solving.svg";
 import FreelancerIcon from "./../public/assets/icons/freelance.svg";
 import BackendIcon from "./../public/assets/icons/backend.svg";
 import FullStackIcon from "./../public/assets/icons/full-stack.svg";
+import { color } from "framer-motion";
 
 const navLinks = [
   {
@@ -60,26 +62,6 @@ const services = [
 const technologies = {
   languages: [
     {
-      name: "HTML5",
-      icon: "/assets/tech/html5.svg",
-      link: "https://html.spec.whatwg.org/multipage/",
-    },
-    {
-      name: "CSS3",
-      icon: "/assets/tech/css3.svg",
-      link: "https://www.w3.org/Style/CSS/Overview.en.html",
-    },
-    {
-      name: "JavaScript",
-      icon: "/assets/tech/javascript.svg",
-      link: "https://262.ecma-international.org/",
-    },
-    {
-      name: "TypeScript",
-      icon: "/assets/tech/typescript.svg",
-      link: "https://www.typescriptlang.org/",
-    },
-    {
       name: "C",
       icon: "/assets/tech/c.svg",
       link: "https://en.cppreference.com/w/c",
@@ -103,6 +85,26 @@ const technologies = {
       name: "PHP",
       icon: "/assets/tech/php.svg",
       link: "https://www.php.net/",
+    },
+    {
+      name: "HTML5",
+      icon: "/assets/tech/html5.svg",
+      link: "https://html.spec.whatwg.org/multipage/",
+    },
+    {
+      name: "CSS3",
+      icon: "/assets/tech/css3.svg",
+      link: "https://www.w3.org/Style/CSS/Overview.en.html",
+    },
+    {
+      name: "JavaScript",
+      icon: "/assets/tech/javascript.svg",
+      link: "https://262.ecma-international.org/",
+    },
+    {
+      name: "TypeScript",
+      icon: "/assets/tech/typescript.svg",
+      link: "https://www.typescriptlang.org/",
     },
   ],
   frameworks: [
@@ -211,8 +213,7 @@ const technologies = {
       name: "BUN",
       icon: "/assets/tech/bun.svg",
       link: "https://bun.sh/",
-    }
-
+    },
   ],
   databases: [
     {
@@ -245,19 +246,6 @@ const technologies = {
 
 const experiences = [
   {
-    title: "Legal Translator",
-    company_name: "Elite Legal Translation Services",
-    icon: "/assets/company/legal.png",
-    iconBg: "#E6DEDD",
-    date: "November 2019 - Feburary 2022",
-    points: [
-      "Translating legal documents from Arabic to English or English to French with high accuracy.",
-      "Collaborating with legal experts to ensure precise terminology and legal context in translations.",
-      "Reviewing and proofreading translations to ensure clarity and correctness across languages.",
-      "Ensuring confidentiality and adhering to legal standards during the translation process."
-    ],
-  },
-  {
     title: "IT support intern",
     company_name: "Computime Hong Kong",
     icon: "/assets/company/computime.png",
@@ -267,7 +255,20 @@ const experiences = [
       "Assisted in troubleshooting hardware and software issues for internal users, ensuring minimal downtime.",
       "Supported the IT team in managing system upgrades and deployments, including the configuration of new workstations.",
       "Maintained and updated IT documentation, ensuring accurate records of system configurations and troubleshooting procedures.",
-      "Provided technical support to employees, both remotely and in-person, addressing various IT-related inquiries and resolving issues efficiently."
+      "Provided technical support to employees, both remotely and in-person, addressing various IT-related inquiries and resolving issues efficiently.",
+    ],
+  },
+  {
+    title: "Backend Engineer",
+    company_name: "Masu Business Software Solutions",
+    icon: "/assets/company/masu.png",
+    iconBg: "#E6DEDD",
+    date: "July 2023 - February 2024",
+    points: [
+      "Translating legal documents from Arabic to English or English to French with high accuracy.",
+      "Collaborating with legal experts to ensure precise terminology and legal context in translations.",
+      "Reviewing and proofreading translations to ensure clarity and correctness across languages.",
+      "Ensuring confidentiality and adhering to legal standards during the translation process.",
     ],
   },
   {
@@ -275,12 +276,12 @@ const experiences = [
     company_name: "Geeks for Geeks",
     icon: "/assets/company/geeks.png",
     iconBg: "#E6DEDD",
-    date: "Auguest 2022 - Present",
+    date: "July 2023 - Present",
     points: [
       "Currently serving as web application engineer, responsible for guiding technical aspects, fostering collaboration, and contributing to strategic decisions.",
       "Led induction programs, ensured new member alignment with the organization's mission, and provided technical mentorship.",
       "Developed more than 25+ website, enhancing every organization's online visibility.",
-      "Helped in building and securing many web servers with Top network engineers.", 
+      "Helped in building and securing many web servers with Top network engineers.",
     ],
   },
 ];
@@ -406,8 +407,7 @@ const projects = [
     image: "/assets/projects/leetcode.png",
     source_code_link:
       "https://github.com/ibra-kdbra/Journey_FullStack/tree/leetCode",
-    deployed_link:
-      "https://leetcode-copy.netlify.app/",
+    deployed_link: "https://leetcode-copy.netlify.app/",
   },
   {
     name: "Chess Game Engine",
@@ -432,10 +432,8 @@ const projects = [
       },
     ],
     image: "/assets/projects/chess_game.png",
-    source_code_link:
-      "https://github.com/ibra-kdbra/Chessboard-three.js",
-    deployed_link:
-      "https://ibra-kdbra.github.io/Chessboard-three.js/",
+    source_code_link: "https://github.com/ibra-kdbra/Chessboard-three.js",
+    deployed_link: "https://ibra-kdbra.github.io/Chessboard-three.js/",
   },
   {
     name: "Admin API website",
@@ -466,11 +464,10 @@ const projects = [
     image: "/assets/projects/admin_platform.png",
     source_code_link:
       "https://github.com/ibra-kdbra/Journey_FullStack/tree/flask_soft_ui_dashboard",
-    deployed_link:
-      "https://django-datta-able-whtm.onrender.com/",
+    deployed_link: "https://django-datta-able-whtm.onrender.com/",
   },
   {
-    name: "",
+    name: "iPhone Store showcase",
     description:
       "Mobile Device show case using 3d webgl technologies with threejs, nextjs with gsap motion over heavy styling using tailwindcss",
     tags: [
@@ -498,8 +495,7 @@ const projects = [
     image: "/assets/projects/mobile_showcase.png",
     source_code_link:
       "https://github.com/ibra-kdbra/Journey_FullStack/tree/iphone-3d_animation",
-    deployed_link:
-      "https://iphone-3d-animate-vnext.vercel.app/",
+    deployed_link: "https://iphone-3d-animate-vnext.vercel.app/",
   },
   {
     name: "Reservation System",
@@ -529,13 +525,199 @@ const projects = [
       {
         name: "cloudinary",
         color: "violet-text-gradient",
-      }
+      },
     ],
     image: "/assets/projects/reservation.png",
+    source_code_link: "https://github.com/ibra-kdbra/reservation-system",
+    deployed_link: "https://public-reservation.netlify.app/",
+  },
+  {
+    name: "GSAP Honor",
+    description:
+      "Imitation of the Honor Official Website Homepage website using 3d webgl technologies with threejs, nextjs with gsap motion over heavy styling using sass",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "gsap",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "grey-text-gradient",
+      },
+      {
+        name: "sass",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: "/assets/projects/honor-gsap.png",
     source_code_link:
-      "https://github.com/ibra-kdbra/reservation-system",
+      "https://github.com/ibra-kdbra/Journey_FullStack/tree/gsap-honor",
+    deployed_link: "https://honor-gsap.netlify.app/",
+  },
+  {
+    name: "Pada Bot",
+    description:
+      "PadaBot is a powerful SaaS monitoring tool designed to simplify event tracking and alerting for developers",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "hono.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "reactjs",
+        color: "cyan-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "shadcn/ui",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/assets/projects/padabot.png",
+    source_code_link:
+      "https://github.com/ibra-kdbra/Journey_FullStack/tree/padabot",
+    deployed_link: "https://padabot.netlify.app/",
+  },
+  {
+    name: "Dominium",
+    description:
+      "SaaS platform leverages the latest technologies to offer a robust solution for building websites, managing projects, and handling financial transactions seamlessly, Designed for agencies, freelancers, and businesses looking to streamline their operations.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node.js",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "reactjs",
+        color: "grey-text-gradient",
+      },
+      {
+        name: "mysql",
+        color: "cyan-text-gradient",
+      },
+      {
+        name: "shadcn/ui",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "zod",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/assets/projects/dominium.png",
+    source_code_link:
+      "https://github.com/ibra-kdbra/Journey_FullStack/tree/dominium",
+    deployed_link: "https://dominiump.netlify.app/",
+  },
+  {
+    name: "Inventory Management System",
+    description:
+      "Winful fish restaurant is a family-owned business with over a decade of experience in the seafood industry. The company heavily relies on QuickBooks for essential tasks such as invoicing, stocking, and accounting. However, manual processes have led to frequent errors in daily operations, prompting the need for an automated solution.",
+    tags: [
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "whatsapp-api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nest.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "cyan-text-gradient",
+      },
+      {
+        name: "jest",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "twilio",
+        color: "magenta-text-gradient",
+      },
+      {
+        name: "express.js",
+        color: "grey-text-gradient",
+      },
+      {
+        name: "aws-sdk",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "typeorm",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: "/assets/projects/inventory-be.png",
+    source_code_link:
+      "https://github.com/ibra-kdbra/Journey_FullStack/tree/inventory-backend",
     deployed_link:
-      "https://public-reservation.netlify.app/",
+      "https://github.com/ibra-kdbra/Journey_FullStack/blob/inventory-backend/captures/whatsapp.gif",
+  },
+  {
+    name: "Hestia CP",
+    description: "HestiaCP add multiple NodeJS apps using QuickApp Installer.",
+    tags: [
+      {
+        name: "php",
+        color: "purple-text-gradient",
+      },
+      {
+        name: "bash-script",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: "/assets/projects/hestia-cp.png",
+    source_code_link:
+      "https://github.com/ibra-kdbra/Journey_FullStack/tree/hestia-cp",
+    deployed_link:
+      "https://github.com/ibra-kdbra/Journey_FullStack/tree/hestia-cp",
   },
 ];
 
@@ -544,6 +726,11 @@ const socials = [
     id: "github",
     icon: <GithubIcon />,
     link: "https://github.com/ibra-kdbra",
+  },
+  {
+    id: "gitlab",
+    icon: <GitLabIcon />,
+    link: "https://gitlab.com/ibra-kdbra",
   },
   {
     id: "linkedin",

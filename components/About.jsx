@@ -41,13 +41,13 @@ function About() {
         </div>
         <div className="w-fit break-words">
           <Link
-            href="sonarfarouq@gmail.com"
+            href="lustpol7@gmail.com"
             target="_blank"
             rel="noreferrer"
             className="hover:text-primary w-full transition-all duration-100 ease-in flex md:items-center gap-2 md:flex-row flex-wrap word-break hover:-translate-y-2"
           >
             <EmailIcon className="w-[30px] h-[30px]" />
-            sonarfarouq@gmail.com
+            lustpol7@gmail.com
           </Link>
         </div>
         <div className="flex gap-5 items-center">
@@ -63,7 +63,7 @@ function About() {
           ))}
         </div>
         <Link
-          href="document/farouq-resume.pdf"
+          href="document/resume.pdf"
           target="_blank"
           rel="noreferrer"
           className="w-fit"
