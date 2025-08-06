@@ -1,43 +1,87 @@
-import { Suspense, useEffect, useRef } from "react";
+import {
+  OrbitControls,
+  PerspectiveCamera,
+  RandomizedLight,
+  useAnimations,
+  useFBX,
+  useGLTF,
+} from "@react-three/drei";
+import { Suspense, useEffect, useRef, useState } from "react";
+import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useAnimations, useFBX, useGLTF } from "@react-three/drei";
-import type { Group } from "three";
 
 import CanvasLoader from "../Loader";
 import PlayerModel from "./models/PlayerModel";
-import type { PlayerProps } from "@/types/global";
+import { PlayerProps } from "@/types/global";
 
 function Player({ isMobile }: PlayerProps) {
-  const playerRef = useRef<Group>(null);
-  const { nodes, materials } = useGLTF("/models/player/player.glb");
-  const { animations } = useFBX("/animations/standing-greeting.fbx");
-  const { actions } = useAnimations(animations, playerRef);
+  const group = useRef();
+  const [animationsLoaded, setAnimationsLoaded] = useState(false);
+
+  const { nodes, materials, scene } = useGLTF("models/player/player.glb");
+  const { animations: waveAnimation } = useFBX(
+    "animations/standing-greeting.fbx"
+  );
+  scene.frustumCulled = false;
+
+  if (waveAnimation[0]) {
+    waveAnimation[0].name = "wave-animation";
+  }
+
+  const { actions } = useAnimations(waveAnimation, group);
 
   useEffect(() => {
-    if (animations[0]) {
-      actions[animations[0].name]?.play();
+    if (waveAnimation && actions["wave-animation"]) {
+      setAnimationsLoaded(true);
     }
-  }, [actions, animations]);
+    if (animationsLoaded && actions["wave-animation"]) {
+      actions["wave-animation"].reset().play();
+    }
+  }, [animationsLoaded, waveAnimation, actions]);
+
+  setTimeout(() => {
+    if (waveAnimation && actions["wave-animation"]) {
+      setAnimationsLoaded(true);
+    }
+  }, 2000);
 
   return (
     <>
-      <ambientLight intensity={0.25} />
-      <directionalLight position={[0, 0, 0.05]} />
-      <PlayerModel
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        nodes={nodes as any}
-        materials={materials}
-        scale={isMobile ? 2.4 : 2.6}
-        position={isMobile ? [0, -2, -3] : [0, -2, -3]}
-        rotation={[-Math.PI / 2, 0, 0]}
-        group={playerRef}
+      <ambientLight intensity={1} />
+      <PerspectiveCamera
+        makeDefault
+        position={[0, 0, 12]}
+        fov={30}
+        near={0.8}
+        far={120}
+        zoom={1.4}
       />
-      <OrbitControls
-        autoRotate={false}
-        enableZoom={false}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-      />
+      <RandomizedLight position={[0, 1, 0]} />
+      <pointLight intensity={2} position={[1, 1.5, 0]} color={"#804dee"} />
+      <pointLight intensity={2} position={[-1, 1.5, 1]} color={"#4b42a7"} />
+      <pointLight intensity={2} position={[-1, 0.5, 1]} color={"#804dee"} />
+      {!isMobile && (
+        <OrbitControls
+          makeDefault
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+          enableDamping={true}
+          dampingFactor={0.05}
+          enablePan={false}
+          autoRotate={false}
+        />
+      )}
+      <Suspense fallback={<CanvasLoader />}>
+        <PlayerModel
+          nodes={nodes}
+          materials={materials}
+          rotation={[-1.6, 0, 0]}
+          position={isMobile ? [0, -2.7, 0] : [0, -2.1, 0]}
+          scale={isMobile ? 3 : 2}
+          group={group}
+        />
+      </Suspense>
     </>
   );
 }
@@ -45,22 +89,13 @@ function Player({ isMobile }: PlayerProps) {
 function PlayerCanvas({ isMobile }: PlayerProps) {
   return (
     <Canvas
-      shadows
-      frameloop="demand"
       dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
-      camera={{
-        fov: 45,
-        near: 0.1,
-        far: 200,
-        position: [-4, 3, 6],
+      gl={{
+        outputColorSpace: THREE.SRGBColorSpace,
+        alpha: true,
       }}
     >
-      <Suspense fallback={<CanvasLoader />}>
-        <Player isMobile={isMobile} />
-      </Suspense>
-
-      <Preload all />
+      <Player isMobile={isMobile} />
     </Canvas>
   );
 }
