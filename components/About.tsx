@@ -17,7 +17,7 @@ function About() {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
       >
-        <p className={"sectionSubText text-gray-300"}>Introduction</p>
+        <p className={"sectionSubText text-gray-900 dark:text-gray-300"}>Introduction</p>
         <h2 className={"sectionHeadText text-white"}>Overview.</h2>
       </motion.div>
       <motion.div
@@ -25,7 +25,7 @@ function About() {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className="mt-4 dark:text-ctnSecondaryDark text-gray-300 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
+        className="mt-4 text-gray-900 dark:text-gray-100 text-[17px] w-full leading-[30px] flex flex-col justify-between gap-6"
       >
         <div>
           As a Web Application Engineer with a B.S in Artificial Intelligence
