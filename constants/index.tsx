@@ -54,7 +54,7 @@ const services: ServiceWithIcon[] = [
     icon: <BackendIcon />,
   },
   {
-    title: "Problem Solving",
+    title: "Problem Solver",
     icon: <ProblemSolvingIcon />,
   },
   {
